@@ -18,4 +18,4 @@ function f(num) {
         console.log("Not divisible");
     }
 }
-f();
+f(69);
