@@ -22,4 +22,4 @@ function solve(arr1,arr2) {
     }
 }
 
-soleve();
+solve([1,2],[1,2]);
