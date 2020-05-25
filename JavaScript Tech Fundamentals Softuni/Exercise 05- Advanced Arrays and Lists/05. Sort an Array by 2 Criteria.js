@@ -5,8 +5,8 @@ function solve(inputArr) {
         console.log(element);
     });
 }
-solve(["alpha", "beta", "gamma"]);
-//solve([ "Deny","test", "omen","Default"]); 
+//solve(["alpha", "beta", "gamma"]);
+solve([ "Deny","test", "omen","Default"]); 
 // Deny
 // omen
 // test
