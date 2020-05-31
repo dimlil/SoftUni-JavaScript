@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pipe": "nodemon pipe.js"
+    "pipe": "nodemon pipe.js",
+    "read-stream": "nodemon read-stream.js",
+    "write-stream": "nodemon write-stream.js",
+    "test-events": "node events.js"
   },
   "author": "Dimitar Vasilev",
   "license": "ISC",
