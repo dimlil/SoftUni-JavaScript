@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const homePageRouter=require('./routes/home-page')
+const homePageRouter=require('./routes/home-page');
 
 app.use('/',homePageRouter)
 
