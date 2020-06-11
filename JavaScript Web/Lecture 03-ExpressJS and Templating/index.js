@@ -2,13 +2,30 @@ const express = require('express');
 const app = express();
 const port = 3000;
 const homePageRouter = require('./routes/home-page');
-const handlebars = require('express-handlebars')
+const handlebars = require('express-handlebars');
 
 app.engine('.hbs', handlebars({
     extname: '.hbs'
 }));
 app.set('view engine', '.hbs');
+app.set('views', __dirname + '/views');
 
+app.set('view options', {
+    layout: 'main'
+});
+
+app.get('/home-page-test', (req, res) => {
+    res.render('home-page');
+});
+
+app.get('/about', (req, res) => {
+    res.render('about-template', {
+        layout: 'about'
+    });
+})
+app.get('/someting', (req, res) => {
+    res.render('something-template');
+})
 
 app.use(express.static('public'));
 app.use('/static', express.static(__dirname + '/public/static.html'));
