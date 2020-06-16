@@ -1,9 +1,13 @@
 // TODO: Require Controllers...
+const {getAllCubes} = require('../controllers/cubes');
+const {getCubes} = require('../controllers/database');
 
 module.exports = (app) => {
     app.get('/', (req, res) => {
         res.render('index', {
-            title: 'Cube Workshop'
+            title: 'Cube Workshop',
+            // cubes: getAllCubes(),
+            cubes: getCubes(),
         });
     });
     app.get('/about', (req, res) => {
@@ -16,7 +20,7 @@ module.exports = (app) => {
             title: 'Create Cube'
         })
     });
-    app.get('/details', (req, res) => {
+    app.get('/details/:id', (req, res) => {
         res.render('details', {
             title: 'Details'
         })
