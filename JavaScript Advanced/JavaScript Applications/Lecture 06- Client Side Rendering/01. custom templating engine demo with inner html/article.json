@@ -1,0 +1,17 @@
+[
+    {
+        "title": "First Article",
+        "content": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus optio sint dicta autem minus officia!",
+        "author": "Peter Peterson"
+    },
+    {
+        "title": "Second Article",
+        "content": "vitae. Quaerat numquam iusto voluptatibus aliquam deserunt.",
+        "author": "Jhon Smith"
+    },
+    {
+        "title": "Third Article",
+        "content": "Assumenda magni eligendi cumque dolorum ab ratione perspiciatis!",
+        "author": "Marry Poppins"
+    }
+]

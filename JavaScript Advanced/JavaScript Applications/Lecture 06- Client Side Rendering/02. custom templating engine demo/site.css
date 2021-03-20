@@ -1,0 +1,12 @@
+body{
+    width: 980px;
+    margin: auto;
+}
+article footer {
+    color: #999;
+}
+article {
+    margin: 32px;
+    padding: 32px;
+    box-shadow: 0 0 8px 8px #BFBFBF;
+}
