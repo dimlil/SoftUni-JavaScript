@@ -1,0 +1,54 @@
+<div class="container" style="height: 90vh;">
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+        <h1 class="display-3">Welcome Share Tripers!</h1>
+        <p class="lead">Shared Trip is the best way to road across the country. <br> Find yours Shared Trip's
+            buddies, when you share with us yours trip plans and let the exploration begin!</p>
+        <a href="/create" class="btn btn-primary btn-lg">Offer Trip!</a>
+    </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+        {{#if trips}}
+        {{#each trips}}
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top" src="{{imgUrl}}" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">{{start}} - {{end}}</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="/details/:{{_id}}" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        {{else}}
+        <div class="row text-center">
+
+            <div style="width: 100%;">
+                <img style="max-width: 500px;"
+                    src="https://images.all-free-download.com/images/graphiclarge/lifestyle_background_hitchhiker_road_luggage_icons_cartoon_design_6838677.jpg" />
+                <p class="lead" style=" width: 100%; text-align: center; font-size: 22px; font-style: italic;">
+                    Hitchhiker time...</p>
+            </div>
+        </div>
+        {{/if}}
+
+        {{!-- <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100">
+                <img class="card-img-top"
+                    src="https://vignette.wikia.nocookie.net/gran-turismo/images/b/b2/Chevrolet_Camaro_SS_%2769.jpg/revision/latest?cb=20181005160928"
+                    alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Studentski grad - Varna</h4>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                </div>
+            </div>
+        </div> --}}
+
+    </div>
+    <!-- /.row -->
+</div>

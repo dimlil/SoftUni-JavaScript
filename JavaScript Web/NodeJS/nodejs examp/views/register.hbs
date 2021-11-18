@@ -1,0 +1,32 @@
+{{!-- <form action="/register" method="POST">
+    <input type="text" name="username" />
+    <input type="text" name="password" />
+    <input type="text" name="repass" />
+    <input type="submit" />
+</form> --}}
+<section class="py-5">
+    <div class="container">
+        <h1 style="margin: 2%; text-align: center;">Register</h1>
+        <div style="padding: 5%;">
+            <form action="/register" method="POST">
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        placeholder="Enter email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="rePassword">Re-Password</label>
+                    <input type="password" class="form-control" id="rePassword" placeholder="Re-Password" name="repass">
+                </div>
+                <div class="form-group">
+                    <p>Already have account? <a href="/login">Login Now!</a></p>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
